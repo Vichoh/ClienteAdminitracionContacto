@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://capaServicio/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://capaServicio/">
+
+<xs:element name="PersistentException" type="tns:PersistentException"/>
+
+<xs:element name="agregarActividadServicioWeb" type="tns:agregarActividadServicioWeb"/>
+
+<xs:element name="agregarActividadServicioWebResponse" type="tns:agregarActividadServicioWebResponse"/>
+
+<xs:element name="agregarContactoAGrupo" type="tns:agregarContactoAGrupo"/>
+
+<xs:element name="agregarContactoAGrupoResponse" type="tns:agregarContactoAGrupoResponse"/>
+
+<xs:element name="agregarContactoServicioWeb" type="tns:agregarContactoServicioWeb"/>
+
+<xs:element name="agregarContactoServicioWebResponse" type="tns:agregarContactoServicioWebResponse"/>
+
+<xs:element name="agregarGrupoServicioWeb" type="tns:agregarGrupoServicioWeb"/>
+
+<xs:element name="agregarGrupoServicioWebResponse" type="tns:agregarGrupoServicioWebResponse"/>
+
+<xs:element name="agregarNotificacionAContacto" type="tns:agregarNotificacionAContacto"/>
+
+<xs:element name="agregarNotificacionAContactoResponse" type="tns:agregarNotificacionAContactoResponse"/>
+
+<xs:element name="busquedaAvanzada" type="tns:busquedaAvanzada"/>
+
+<xs:element name="busquedaAvanzadaGrupo" type="tns:busquedaAvanzadaGrupo"/>
+
+<xs:element name="busquedaAvanzadaGrupoResponse" type="tns:busquedaAvanzadaGrupoResponse"/>
+
+<xs:element name="busquedaAvanzadaResponse" type="tns:busquedaAvanzadaResponse"/>
+
+<xs:element name="busquedaContactoGrupos" type="tns:busquedaContactoGrupos"/>
+
+<xs:element name="busquedaContactoGruposResponse" type="tns:busquedaContactoGruposResponse"/>
+
+<xs:element name="busquedaContactosActividadesLeidas" type="tns:busquedaContactosActividadesLeidas"/>
+
+<xs:element name="busquedaContactosActividadesLeidasResponse" type="tns:busquedaContactosActividadesLeidasResponse"/>
+
+<xs:element name="busquedaContactosLeidos" type="tns:busquedaContactosLeidos"/>
+
+<xs:element name="busquedaContactosLeidosResponse" type="tns:busquedaContactosLeidosResponse"/>
+
+<xs:element name="busquedaGruposContacto" type="tns:busquedaGruposContacto"/>
+
+<xs:element name="busquedaGruposContactoResponse" type="tns:busquedaGruposContactoResponse"/>
+
+<xs:element name="busquedaSimple" type="tns:busquedaSimple"/>
+
+<xs:element name="busquedaSimpleGrupo" type="tns:busquedaSimpleGrupo"/>
+
+<xs:element name="busquedaSimpleGrupoResponse" type="tns:busquedaSimpleGrupoResponse"/>
+
+<xs:element name="busquedaSimpleResponse" type="tns:busquedaSimpleResponse"/>
+
+<xs:element name="editarContactoServicioWeb" type="tns:editarContactoServicioWeb"/>
+
+<xs:element name="editarContactoServicioWebResponse" type="tns:editarContactoServicioWebResponse"/>
+
+<xs:element name="editarGrupoServicioWeb" type="tns:editarGrupoServicioWeb"/>
+
+<xs:element name="editarGrupoServicioWebResponse" type="tns:editarGrupoServicioWebResponse"/>
+
+<xs:element name="eliminarContactoDeGrupo" type="tns:eliminarContactoDeGrupo"/>
+
+<xs:element name="eliminarContactoDeGrupoResponse" type="tns:eliminarContactoDeGrupoResponse"/>
+
+<xs:element name="eliminarContactoServicioWeb" type="tns:eliminarContactoServicioWeb"/>
+
+<xs:element name="eliminarContactoServicioWebResponse" type="tns:eliminarContactoServicioWebResponse"/>
+
+<xs:element name="eliminarGrupoServicioWeb" type="tns:eliminarGrupoServicioWeb"/>
+
+<xs:element name="eliminarGrupoServicioWebResponse" type="tns:eliminarGrupoServicioWebResponse"/>
+
+<xs:element name="enviarNotificacionServicioWeb" type="tns:enviarNotificacionServicioWeb"/>
+
+<xs:element name="enviarNotificacionServicioWebResponse" type="tns:enviarNotificacionServicioWebResponse"/>
+
+<xs:element name="grabarActividadLeidaServicioWeb" type="tns:grabarActividadLeidaServicioWeb"/>
+
+<xs:element name="grabarActividadLeidaServicioWebResponse" type="tns:grabarActividadLeidaServicioWebResponse"/>
+
+<xs:element name="grabarNotificacionLeidaServicioWeb" type="tns:grabarNotificacionLeidaServicioWeb"/>
+
+<xs:element name="grabarNotificacionLeidaServicioWebResponse" type="tns:grabarNotificacionLeidaServicioWebResponse"/>
+
+<xs:element name="verLasActividadesDeUnGrupo" type="tns:verLasActividadesDeUnGrupo"/>
+
+<xs:element name="verLasActividadesDeUnGrupoResponse" type="tns:verLasActividadesDeUnGrupoResponse"/>
+
+<xs:element name="verLosMensajesDeUnGrupo" type="tns:verLosMensajesDeUnGrupo"/>
+
+<xs:element name="verLosMensajesDeUnGrupoResponse" type="tns:verLosMensajesDeUnGrupoResponse"/>
+
+<xs:complexType name="enviarNotificacionServicioWeb">
+<xs:sequence>
+<xs:element name="mensajeNotificacion" type="xs:string" minOccurs="0"/>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="enviarNotificacionServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PersistentException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarGrupoServicioWeb">
+<xs:sequence>
+<xs:element name="uidGrupo" type="xs:int"/>
+<xs:element name="nuevoNombreGrupo" type="xs:string" minOccurs="0"/>
+<xs:element name="nuevoDescripcionGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarGrupoServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarGrupoServicioWeb">
+<xs:sequence>
+<xs:element name="nombreGrupo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcionGrupo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarGrupoServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarGrupoServicioWeb">
+<xs:sequence>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarGrupoServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarContactoServicioWeb">
+<xs:sequence>
+<xs:element name="uid_Contacto" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarContactoServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaAvanzada">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="mail" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaAvanzadaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaGruposContacto">
+<xs:sequence>
+<xs:element name="uidContacto" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaGruposContactoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarNotificacionAContacto">
+<xs:sequence>
+<xs:element name="uidNotificacion" type="xs:int"/>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarNotificacionAContactoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaSimple">
+<xs:sequence>
+<xs:element name="textoBusqueda" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaSimpleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaContactoGrupos">
+<xs:sequence>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaContactoGruposResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verLosMensajesDeUnGrupo">
+<xs:sequence>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verLosMensajesDeUnGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabarActividadLeidaServicioWeb">
+<xs:sequence>
+<xs:element name="uidActividad_Leida" type="xs:int"/>
+<xs:element name="visto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabarActividadLeidaServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaSimpleGrupo">
+<xs:sequence>
+<xs:element name="textoBusqueda" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaSimpleGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaAvanzadaGrupo">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaAvanzadaGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaContactosActividadesLeidas">
+<xs:sequence>
+<xs:element name="uidActividad" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaContactosActividadesLeidasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabarNotificacionLeidaServicioWeb">
+<xs:sequence>
+<xs:element name="uidNotificacion_Leida" type="xs:int"/>
+<xs:element name="visto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grabarNotificacionLeidaServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarContactoDeGrupo">
+<xs:sequence>
+<xs:element name="uidContacto" type="xs:int"/>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarContactoDeGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarContactoAGrupo">
+<xs:sequence>
+<xs:element name="uidContacto" type="xs:int"/>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarContactoAGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verLasActividadesDeUnGrupo">
+<xs:sequence>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verLasActividadesDeUnGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarContactoServicioWeb">
+<xs:sequence>
+<xs:element name="uidContacto" type="xs:int"/>
+<xs:element name="nuevoNombreContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="nuevoApellidoContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="nuevoTelefonoContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="nuevoMailContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="nuevoCiudadContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="nuevoEmpresaContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="nuevoImagenContacto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarContactoServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarContactoServicioWeb">
+<xs:sequence>
+<xs:element name="nombreContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="apellidoContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="telefonoContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="mailContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="empresaContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudadContacto" type="xs:string" minOccurs="0"/>
+<xs:element name="imagenContacto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarContactoServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaContactosLeidos">
+<xs:sequence>
+<xs:element name="uidNotificacion" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="busquedaContactosLeidosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarActividadServicioWeb">
+<xs:sequence>
+<xs:element name="nombreAct" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcionAct" type="xs:string" minOccurs="0"/>
+<xs:element name="uidGrupo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarActividadServicioWebResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
